@@ -21,3 +21,7 @@ Handle any missing or blur images to create a reliable dataset.Basically all peo
 
 * Model Training: I have used CNN (convolutional nural network) model for training which is best suit for image classification model. In this i have import required libraries for model training. An ImageDataGenerator is created to perform data augmentation, which artificially increases the diversity of the training dataset by applying random transformations to the images. 
 The data is split into training and testing sets using train_test_split. Pixel values in the image data are normalized to be between 0 and 1. The data is reshaped to fit the input requirements of the CNN. A sequential model is created using Keras.Convolutional layers (Conv2D) with ReLU activation, max-pooling layers (MaxPooling2D), batch normalization (BatchNormalization), a flatten layer (Flatten), and dense layers (Dense) with ReLU activation are added to the model. A dropout layer (Dropout) is included to prevent overfitting. The output layer has a softmax activation function with 5 units,because it's a classification task with 5 classes.The model is trained using the fit method. Model is saved into pickle file using joblib module.
+
+
+## update
+Use the image_classifier.ipynb file as the updated version, as it has achieved the best testing accuracy compared to the previous model. Additionally, I have used hyperparameter tuning to enhance the accuracy.
